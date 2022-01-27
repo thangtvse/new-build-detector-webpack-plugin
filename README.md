@@ -6,7 +6,7 @@ A simple webpack plugin which helps in detecting new build
 Install the plugin 
 
 ```sh
-npm install --save-dev @uendno/new-build-detector-webpack-plugin
+npm install --save-dev new-build-detector-webpack-plugin
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ const anotherListener = window.setOnVersionChangeListener(() => {
     window.location.reload();
 });
 
-window.startVersionChecking(1000); // one check per second
+window.startVersionChecking(1000); // Start checking once per second
 ```
 
 3. Make version.txt ignored by any types of cache
