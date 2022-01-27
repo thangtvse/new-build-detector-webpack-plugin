@@ -25,7 +25,7 @@ module.exports = {
 In your application script:
 
 ```js
-const listener = window.setOnVersionChangeListener(() =>{
+const listener = window.setOnVersionChangeListener(() => {
     window.alert("We have detected a new build. Please refresh your browser.");
 
     listener.remove(); // Remove the listener
@@ -33,7 +33,7 @@ const listener = window.setOnVersionChangeListener(() =>{
 
 // You can add as many listeners as you want
 
-const anotherListener = window.setOnVersionChangeListener(() =>{
+const anotherListener = window.setOnVersionChangeListener(() => {
     window.location.reload();
 });
 
