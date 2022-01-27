@@ -1,14 +1,14 @@
 {
-  "name": "webpack-app-version-check",
+  "name": "new-build-detector-webpack-plugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple webpack plugin which helps in detecting new build",
   "main": "plugin.js",
   "scripts": {
     "build-test-app": "webpack --config test-app/webpack.config.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["build-dector", "webpack", "plugin"],
+  "author": "uendno",
+  "license": "MIT",
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.67.0",

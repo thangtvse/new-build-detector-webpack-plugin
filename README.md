@@ -44,7 +44,7 @@ window.startVersionChecking(1000); // one check per second
 
 After you build your app, a file named "version.txt" is created at the dist folder. Please configure your hosting service/DNS/Web server to ignore this file from any types of cache (browser cache, DNS cache, web server cache,...)
 
-For example, if you are hosting your web site using s3 and cloudfront
+For example, if you are hosting your web site using s3 and cloudfront. The following script uploads your `build` folder into s3 and then rewrites the metadata of `version.txt` to make it ignored by cloudfront cache and browser cache.
 
 ```sh
 aws s3 sync --delete --cache-control max-age=2592000,public build/ s3://your-bucket/app-folder
