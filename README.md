@@ -6,7 +6,7 @@ A simple webpack plugin which helps in detecting new build
 Install the plugin 
 
 ```sh
-npm install --save-dev @uendno/new-build-detector-webpack-plugin
+npm install --save-dev new-build-detector-webpack-plugin
 ```
 
 ## Usage
