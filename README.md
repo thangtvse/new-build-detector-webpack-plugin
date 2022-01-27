@@ -37,7 +37,7 @@ const anotherListener = window.setOnVersionChangeListener(() => {
     window.location.reload();
 });
 
-window.startVersionChecking(1000);
+window.startVersionChecking(1000); // one check per second
 ```
 
 
