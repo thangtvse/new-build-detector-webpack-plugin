@@ -46,7 +46,7 @@ class NewBuildDetectorPlugin {
     compiler.options.entry = injectClientEntry(compiler.options.entry, path.resolve(__dirname, 'client.js'));
 
     compiler.hooks.done.tap(
-      'WebpackAppVersionCheckPlugin',
+      'NewBuildDetectorPlugin',
       (stats) => {
         fs.writeFileSync(path.resolve(compiler.options.output.path, 'version.txt'), ts)
       }
