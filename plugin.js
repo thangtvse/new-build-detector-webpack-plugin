@@ -25,7 +25,7 @@ const injectClientEntry = (entry, clientEntry) => {
   } else if (typeof entry === 'function') {
     return (...args) =>
       Promise.resolve(entry(...args)).then((resolvedEntry) =>
-        injectRefreshEntry(resolvedEntry, clientEntry)
+        injectClientEntry(resolvedEntry, clientEntry)
       );
   }
 
