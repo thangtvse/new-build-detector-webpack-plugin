@@ -1,6 +1,6 @@
 {
   "name": "new-build-detector-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A simple webpack plugin which helps in detecting new build",
   "main": "plugin.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage"
   },
+  "homepage": "https://github.com/uendno/new-build-detector-webpack-plugin",
   "keywords": [
     "build-dector",
     "webpack",
