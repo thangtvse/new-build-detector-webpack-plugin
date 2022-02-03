@@ -1,0 +1,29 @@
+name: Test
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache root node_modules and package node_modules
+        id: cache-root-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache
+            node_modules
+            packages/*/node_modules
+          key: npm-${{ hashFiles('package.json', 'packages/*/package.json') }}
+
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - run: npm install -g nyc
+
+      - name: NPM install
+        if: steps.cache-root-node-modules.outputs.cache-hit != 'true'
+        run: npm install
+
+      - run: npm run test
