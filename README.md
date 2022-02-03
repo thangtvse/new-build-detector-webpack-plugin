@@ -1,6 +1,8 @@
 # New Build Detector Webpack Plugin
 A simple webpack plugin which helps in detecting new build
 
+![Build status](https://github.com/uendno/new-build-detector-webpack-plugin/actions/workflows/test.yml/badge.svg)
+
 ## Installation
 
 Install the plugin 
